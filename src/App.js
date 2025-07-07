@@ -10,18 +10,25 @@ import './App.css';
 function App() {
   const [activeTab, setActiveTab] = useState('wardrobe');
 
+  // Responsive content wrapper
+  const ContentWrapper = ({ children }) => (
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 to-white lg:pl-64">
+      {children}
+    </div>
+  );
+
   const renderContent = () => {
     switch (activeTab) {
       case 'wardrobe':
-        return <WardrobeDashboard />;
+        return <ContentWrapper><WardrobeDashboard /></ContentWrapper>;
       case 'generator':
-        return <OutfitGenerator />;
+        return <ContentWrapper><OutfitGenerator /></ContentWrapper>;
       case 'dragdrop':
-        return <DragDropOutfit />;
+        return <ContentWrapper><DragDropOutfit /></ContentWrapper>;
       case 'settings':
-        return <Settings />;
+        return <ContentWrapper><Settings /></ContentWrapper>;
       default:
-        return <WardrobeDashboard />;
+        return <ContentWrapper><WardrobeDashboard /></ContentWrapper>;
     }
   };
 

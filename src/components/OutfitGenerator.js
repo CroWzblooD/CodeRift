@@ -180,7 +180,7 @@ const OutfitGenerator = () => {
   };
 
   return (
-    <div className={`min-h-screen bg-gradient-to-br ${weather === 'winter' ? 'from-blue-50' : 'from-orange-50'} to-white pl-64`}>
+    <div className={`min-h-screen bg-gradient-to-br ${weather === 'winter' ? 'from-blue-50' : 'from-orange-50'} to-white`}>
       <div className="container mx-auto px-6 py-8">
         {/* Header */}
         <div className="text-center mb-8">
