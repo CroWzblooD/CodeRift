@@ -45,7 +45,7 @@ const Sidebar = ({ activeTab, onTabChange }) => {
             CR
           </div>
           <div>
-            <h1 className="text-xl font-bold text-gray-800">Code-Rite</h1>
+            <h1 className="text-xl font-bold text-gray-800">CodeRift</h1>
             <p className="text-xs text-gray-500">Wardrobe Manager</p>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Sidebar = ({ activeTab, onTabChange }) => {
       <div className={`absolute bottom-0 left-0 right-0 p-4 border-t ${weather === 'winter' ? 'border-blue-100' : 'border-orange-100'} bg-gray-50`}>
         <div className="text-center">
           <p className="text-xs text-gray-500 mb-1">Made with ❤️</p>
-          <p className="text-xs text-gray-400">Code-Rite Team</p>
+          <p className="text-xs text-gray-400">CodeRift</p>
         </div>
       </div>
     </div>
